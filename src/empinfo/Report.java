@@ -30,7 +30,7 @@ public class Report extends javax.swing.JFrame {
     
     private void UpdateTable(){
         try{
-            String sql="select EmpName As Name,EmpType As Employee_Type,Dept As Department,EmplStatus as Status,CampName as Campus_Name,ProgName as Programme,YOS as Year_Of_Study,SArea as Support_Area,HrsWorked as Hours_Worked,PayRate as Pay_Rate,Amount as Amount_Payable from Empl";
+            String sql="select EmpName As Name,EmpType As Employee,Dept As Department,EmplStatus as Status,CampName as Campus,ProgName as Programme,YOS as Year_Of_Study,SArea as Support_Area,HrsWorked as Hours_Worked,PayRate as Pay_Rate,Amount as Amount from Empl";
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/school","root","@watilah9911");
             stmt = con.prepareStatement(sql);
@@ -82,8 +82,7 @@ public class Report extends javax.swing.JFrame {
             }
         ));
         jTable1.setGridColor(new java.awt.Color(51, 51, 51));
-        jTable1.setRowHeight(17);
-        jTable1.setRowMargin(6);
+        jTable1.setRowHeight(25);
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable1MouseClicked(evt);

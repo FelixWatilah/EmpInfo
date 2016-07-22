@@ -23,6 +23,7 @@ import javax.swing.ButtonGroup;
  * CIT-221-060/2014	-	JOSHUA ONGAGA ONGWAE
  * CIT-221-052/2014	-	FREDRICK MUIRURI KAMAU
  * CIT-221-010/2014	-	FELIX WATILAH WAKHALE
+ * CIT-221-029/2014     -       SHADRACK KIPKIRUI
  */
 public class EmpInfo extends javax.swing.JFrame {
     ResultSet Rset;
@@ -184,12 +185,12 @@ public class EmpInfo extends javax.swing.JFrame {
         nUnionRadioButton = new javax.swing.JRadioButton();
         addSStaffButton = new javax.swing.JButton();
         titlePanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         rLabel = new javax.swing.JLabel();
         ssLabel = new javax.swing.JLabel();
         amountLabel = new javax.swing.JLabel();
         icon = new javax.swing.JPanel();
         iconLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         workPanel = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         getEmpNameComboBox = new javax.swing.JComboBox();
@@ -207,13 +208,13 @@ public class EmpInfo extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        reportButton = new javax.swing.JButton();
         closeButton = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Employee Information");
 
-        empPanel.setBackground(new java.awt.Color(0, 51, 102));
+        empPanel.setBackground(new java.awt.Color(2, 39, 77));
         empPanel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -247,7 +248,7 @@ public class EmpInfo extends javax.swing.JFrame {
         });
 
         jLabel16.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel16.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Bleeding Cowboys", 0, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("Add Employee");
@@ -307,7 +308,7 @@ public class EmpInfo extends javax.swing.JFrame {
         mainTabbedPane.setForeground(new java.awt.Color(255, 255, 255));
         mainTabbedPane.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
 
-        LecPanel.setBackground(new java.awt.Color(0, 51, 102));
+        LecPanel.setBackground(new java.awt.Color(2, 39, 76));
         LecPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         LecPanel.setForeground(new java.awt.Color(0, 51, 153));
         LecPanel.setFont(new java.awt.Font("Amperzand", 0, 14)); // NOI18N
@@ -324,7 +325,7 @@ public class EmpInfo extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Employment Status:");
 
-        permRadioButton.setBackground(new java.awt.Color(0, 51, 102));
+        permRadioButton.setBackground(new java.awt.Color(2, 39, 76));
         permRadioButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         permRadioButton.setForeground(new java.awt.Color(255, 255, 255));
         permRadioButton.setSelected(true);
@@ -335,7 +336,7 @@ public class EmpInfo extends javax.swing.JFrame {
             }
         });
 
-        nPermRadioButton.setBackground(new java.awt.Color(0, 51, 102));
+        nPermRadioButton.setBackground(new java.awt.Color(2, 39, 76));
         nPermRadioButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         nPermRadioButton.setForeground(new java.awt.Color(255, 255, 255));
         nPermRadioButton.setText("Not Permanent");
@@ -387,14 +388,14 @@ public class EmpInfo extends javax.swing.JFrame {
                     .addComponent(nPermRadioButton)
                     .addComponent(permRadioButton)
                     .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addComponent(addLecButton)
                 .addGap(33, 33, 33))
         );
 
         mainTabbedPane.addTab("Lecturer", LecPanel);
 
-        SStaffPanel.setBackground(new java.awt.Color(0, 51, 102));
+        SStaffPanel.setBackground(new java.awt.Color(2, 39, 76));
         SStaffPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SStaffPanel.setFont(new java.awt.Font("Argor Got Scaqh", 0, 14)); // NOI18N
 
@@ -474,7 +475,7 @@ public class EmpInfo extends javax.swing.JFrame {
 
         mainTabbedPane.addTab("Student", SStaffPanel);
 
-        StudentPanel.setBackground(new java.awt.Color(0, 51, 102));
+        StudentPanel.setBackground(new java.awt.Color(2, 39, 76));
         StudentPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         StudentPanel.setFont(new java.awt.Font("Cooper Std Black", 0, 14)); // NOI18N
 
@@ -490,7 +491,7 @@ public class EmpInfo extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Union Status:");
 
-        unionRadioButton.setBackground(new java.awt.Color(0, 51, 102));
+        unionRadioButton.setBackground(new java.awt.Color(2, 39, 76));
         unionRadioButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         unionRadioButton.setForeground(new java.awt.Color(255, 255, 255));
         unionRadioButton.setSelected(true);
@@ -501,7 +502,7 @@ public class EmpInfo extends javax.swing.JFrame {
             }
         });
 
-        nUnionRadioButton.setBackground(new java.awt.Color(0, 51, 102));
+        nUnionRadioButton.setBackground(new java.awt.Color(2, 39, 76));
         nUnionRadioButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         nUnionRadioButton.setForeground(new java.awt.Color(255, 255, 255));
         nUnionRadioButton.setText("Not Unionized");
@@ -544,7 +545,7 @@ public class EmpInfo extends javax.swing.JFrame {
         StudentPanelLayout.setVerticalGroup(
             StudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(StudentPanelLayout.createSequentialGroup()
-                .addContainerGap(55, Short.MAX_VALUE)
+                .addContainerGap(56, Short.MAX_VALUE)
                 .addGroup(StudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sAreaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9))
@@ -580,25 +581,31 @@ public class EmpInfo extends javax.swing.JFrame {
         titlePanel.setBackground(new java.awt.Color(0, 51, 51));
         titlePanel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1.setFont(new java.awt.Font("BatmanForeverAlternate", 1, 28)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("University Employees System");
-
-        icon.setBackground(new java.awt.Color(51, 51, 51));
+        icon.setBackground(new java.awt.Color(0, 51, 51));
         icon.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         iconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/uni.jpg"))); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Bleeding Cowboys", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Employees System");
 
         javax.swing.GroupLayout iconLayout = new javax.swing.GroupLayout(icon);
         icon.setLayout(iconLayout);
         iconLayout.setHorizontalGroup(
             iconLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(iconLabel)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, iconLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(iconLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addContainerGap())
         );
         iconLayout.setVerticalGroup(
             iconLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(iconLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout titlePanelLayout = new javax.swing.GroupLayout(titlePanel);
@@ -606,11 +613,9 @@ public class EmpInfo extends javax.swing.JFrame {
         titlePanelLayout.setHorizontalGroup(
             titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titlePanelLayout.createSequentialGroup()
-                .addGap(71, 71, 71)
+                .addGap(31, 31, 31)
                 .addComponent(icon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addGap(64, 64, 64)
+                .addGap(404, 404, 404)
                 .addComponent(amountLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(rLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -621,9 +626,7 @@ public class EmpInfo extends javax.swing.JFrame {
         titlePanelLayout.setVerticalGroup(
             titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titlePanelLayout.createSequentialGroup()
-                .addGroup(titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(icon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(icon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titlePanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -634,7 +637,7 @@ public class EmpInfo extends javax.swing.JFrame {
                 .addGap(34, 34, 34))
         );
 
-        workPanel.setBackground(new java.awt.Color(0, 51, 102));
+        workPanel.setBackground(new java.awt.Color(2, 39, 76));
         workPanel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.darkGray, null, null));
 
         jLabel11.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -687,8 +690,9 @@ public class EmpInfo extends javax.swing.JFrame {
         });
 
         jLabel15.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel15.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Bleeding Cowboys", 0, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("Work Details");
 
         javax.swing.GroupLayout workPanelLayout = new javax.swing.GroupLayout(workPanel);
@@ -768,13 +772,13 @@ public class EmpInfo extends javax.swing.JFrame {
         );
 
         notiLabel.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
-        notiLabel.setForeground(new java.awt.Color(204, 0, 0));
+        notiLabel.setForeground(new java.awt.Color(102, 0, 0));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        jLabel14.setFont(new java.awt.Font("Sylfaen", 0, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Bleeding Cowboys", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Developed By: J. O. Ongaga, F. M. Kamau & F. W. Watilah ");
+        jLabel14.setText("Developed By: F. W. Watilah ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -783,28 +787,18 @@ public class EmpInfo extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel14)
-                .addGap(498, 498, 498))
+                .addGap(27, 27, 27))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(10, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel14)
-                .addContainerGap())
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 51, 51));
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        reportButton.setBackground(new java.awt.Color(0, 0, 0));
-        reportButton.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        reportButton.setForeground(new java.awt.Color(255, 255, 255));
-        reportButton.setText("REPORT");
-        reportButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                reportButtonActionPerformed(evt);
-            }
-        });
 
         closeButton.setBackground(new java.awt.Color(0, 0, 0));
         closeButton.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -816,6 +810,16 @@ public class EmpInfo extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(0, 0, 0));
+        jButton2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("REPORT");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -823,18 +827,18 @@ public class EmpInfo extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(reportButton)
-                    .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(reportButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
                 .addComponent(closeButton)
-                .addContainerGap())
+                .addGap(33, 33, 33)
+                .addComponent(jButton2)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1054,17 +1058,11 @@ public class EmpInfo extends javax.swing.JFrame {
         printTextArea.setText(null);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void reportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportButtonActionPerformed
-        //creates a new Report object
-        Report report=new Report();
-        
-        //sets the new object visible
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Report report = new Report();
         report.setVisible(true);
-        
-        //sets the hides the empinfo frame.
         this.dispose();
-                
-    }//GEN-LAST:event_reportButtonActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1116,6 +1114,7 @@ public class EmpInfo extends javax.swing.JFrame {
     private javax.swing.JPanel icon;
     private javax.swing.JLabel iconLabel;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1145,7 +1144,6 @@ public class EmpInfo extends javax.swing.JFrame {
     private javax.swing.JTextArea printTextArea;
     private javax.swing.JTextField progNameTextField;
     private javax.swing.JLabel rLabel;
-    private javax.swing.JButton reportButton;
     private javax.swing.JTextField sAreaTextField;
     private javax.swing.JLabel ssLabel;
     private javax.swing.JButton submitButton;
